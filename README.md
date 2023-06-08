@@ -43,15 +43,3 @@ The training consists of three steps.
 1. Train obfuscator 
 2. Train adversary classifier to verify adversary task defense.
 3. Train adversary reconstructor to verify adversary reconstruction defense.
-
-## Main Results
-### Train Obfuscator
-1. `sh experiments/train_obfuscator/{fairface, celeba, cifar10}_split_resnet.sh`
-
-### Train Adversary Classifier
-1. Specify checkpoint `.pth` file path in `experiments/train_adv/{fairface, celeba, cifar10}_split_resnet.sh`
-2. `sh experiments/train_adv/{fairface, celeba, cifar10}_split_resnet.sh`
-
-### Train Adversary Reconstructor
-1. Specify checkpoint `.pth` file path in `experiments/train_recon/{fairface, celeba}_split_resnet.sh`
-2. `sh experiments/train_recon/{fairface, celeba}_split_resnet.sh`
